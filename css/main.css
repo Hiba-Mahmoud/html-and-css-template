@@ -1,0 +1,23 @@
+@import "component/container.css";
+@import "component/variables.css";
+@import "component/header.css";
+@import "component/introduction-section.css";
+@import "component/teachers-section.css";
+@import "component/study-programs.css";
+@import "component/join-us.css";
+@import "component/shop-now.css";
+@import "component/newsLetter.css";
+@import "component/footer.css";
+*,
+::after,
+::before {
+    box-sizing: borde-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* my framework */

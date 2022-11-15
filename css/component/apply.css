@@ -1,0 +1,187 @@
+* {
+    font-family: var(--mainFont);
+}
+
+.apply-page-header {
+    grid-row: 1/2;
+    background-image: url("../../images/content/apply-page/apply-page-background.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.apply-page-header-title-container {
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.apply-page-header-title-container h2 {
+    padding: 15px;
+    font-size: 35px;
+    color: #363636;
+}
+
+.apply-page-header-title-container p {
+    font-size: 14px;
+}
+
+.apply-page-row-two {
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.apply-page-row-two-contaier {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 70px;
+}
+
+.form-input-style {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.form-input-style label,
+.form-inline-inputs-first label {
+    font-weight: 600;
+    color: #363636;
+}
+
+.form-input-style input {
+    padding: 10px 5px;
+    border: 1px solid #e3e3e3;
+    color: #8d8d8d;
+    outline: none;
+}
+
+.form-inline-inputs {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.form-inline-inputs-first {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-inline-inputs-first select,
+.form-inline-inputs-first select option {
+    background: #ffffff;
+    padding: 10px 5px;
+    border: 1px solid #e3e3e3;
+    color: #8d8d8d;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.send-bottom {
+    padding: 10px 15px;
+    background: var(--secondColor);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* column two  */
+
+.apply-page-professors-title h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #363636;
+    letter-spacing: 1px;
+}
+
+.apply-page-professors-title h3 span {
+    padding: 10px 0;
+    display: block;
+    color: #8d8d8d;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.apply-page-professors-container {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.professor-info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.professor-info-image,
+.professor-info-image img {
+    width: 100%;
+    height: fit-content;
+}
+
+.professor-info-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.professor-info-content h4 {
+    color: #363636;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.professor-info-content h5 {
+    color: var(--secondColor);
+    text-transform: uppercase;
+}
+
+.professor-info-content p {
+    color: #8d8d8d;
+    font-size: 13px;
+}
+
+@media (max-width: 961px) {
+    .apply-page-row-two-contaier {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .country-city {
+        display: flex;
+        flex-direction: column;
+    }
+    .gender,
+    .date-of-birth {
+        width: 100%;
+    }
+}

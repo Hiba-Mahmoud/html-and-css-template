@@ -1,0 +1,166 @@
+.join-us {
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.join-us-container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.join-us-form {
+    width: 50%;
+}
+
+.join-us-title h5 {
+    font-family: var(--mainFont);
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.join-us-image {
+    width: 50%;
+}
+
+
+/* .join-us-image img {
+    width: 100%;
+    height: 100%;
+} */
+
+.join-us-form-name-email input {
+    margin-top: 60px;
+    display: block;
+    font-family: var(--mainFont);
+    border: 0;
+    caret-color: var(--secondColor);
+    outline: 0;
+    text-transform: capitalize;
+}
+
+.join-us-form-name-email input:nth-child(1),
+.join-us-form-name-email input:nth-child(2) {
+    width: 80%;
+    padding: 20px 0;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.join-us-form-name-email input:nth-child(1):focus,
+.join-us-form-name-email input:nth-child(2):focus {
+    border-bottom: 1px solid var(--secondColor);
+}
+
+.join-us-form-name-email input:nth-child(3) {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: var(--secondColor);
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.join-us-form-name-email input:nth-child(3):hover {
+    background: #353535;
+}
+
+.qute-section {
+    /* height: 300px; */
+    background: url(../../images/content/header/Marble-texture.jpg);
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.quote-container {
+    width: 60%;
+    margin-top: 150px;
+    text-align: center;
+    font-family: var(--mainFont);
+    font-weight: 800;
+    position: relative;
+}
+
+.quote-container::after {
+    content: "،،";
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    font-family: var(--mainFont);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.quote-auther {
+    display: block;
+    padding: 20px 0 40px 0;
+    text-transform: uppercase;
+    color: var(--secondColor);
+    font-family: var(--mainFont);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.quote-container q {
+    display: block;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    quotes: none;
+    color: #353535;
+}
+
+.quote-container:hover q {
+    color: var(--secondColor);
+}
+
+.quote-container:hover .quote-auther {
+    color: #353535;
+}
+
+@media (max-width: 961px) {
+    .join-us-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .join-us-form {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .join-us-image {
+        width: 100%;
+        height: 80vh;
+    }
+    .join-us-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .join-us-title h5 {
+        font-size: 30px;
+    }
+    .join-us-form-name-email input:nth-child(1),
+    .join-us-form-name-email input:nth-child(2) {
+        width: 100%;
+    }
+}

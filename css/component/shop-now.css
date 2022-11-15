@@ -1,0 +1,167 @@
+.shop-online {
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.shop-online-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.shop-online-title-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+}
+
+.shop-online-title h5 {
+    font-size: 35px;
+    color: #353535;
+}
+
+.shop-online-botton a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #353535;
+    transition: 0.3s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.shop-online-botton a:hover {
+    background: var(--secondColor);
+}
+
+.shop-online-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-template-rows: auto;
+    gap: 25px;
+    justify-content: center;
+}
+
+.shop-online-card-container-image {
+    width: 100%;
+    height: 100%;
+}
+
+.shop-online-card-container-image a {
+    display: block;
+}
+
+.shop-online-card-container-image a img {
+    width: 100%;
+}
+
+.shop-online-card-container {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -ms-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.shop-online-card-container:hover {
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+}
+
+.shop-online-card-container-text {
+    padding: 20px 10px;
+    font-family: var(--mainFont);
+    color: #353535;
+    text-transform: capitalize;
+}
+
+.shop-online-card-container-text div {
+    width: 100%;
+    position: relative;
+}
+
+.shop-online-card-container-text div h6 {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.shop-online-card-container-text div:nth-child(1) span {
+    text-transform: uppercase;
+    color: #A0A0A0;
+}
+
+.shop-online-card-container-text div:nth-child(2) a i:after {
+    content: "";
+    background: #A0A0A0;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.shop-online-card-container-text div:nth-child(2) {
+    padding: 0 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.shop-online-card-container-text div:nth-child(2) a i {
+    padding: 10px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    color: #A0A0A0;
+    font: var(--fa-font-solid);
+    font-size: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.shop-online-card-container-text div:nth-child(3) span {
+    font-weight: 800;
+    ;
+}
+
+.shop-online-card-container-text div:first-child::before:hover {
+    background: var(--secondColor);
+}
+
+@media (max-width: 480px) {
+    .shop-online-title-botton {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .shop-online-botton a {
+        font-size: 12px;
+    }
+    .join-us-title h5 {
+        font-size: 30px;
+    }
+    .join-us-form-name-email input:nth-child(1),
+    .join-us-form-name-email input:nth-child(2) {
+        width: 100%;
+    }
+}

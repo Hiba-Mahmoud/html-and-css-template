@@ -1,0 +1,121 @@
+/* second section  */
+
+.row-two-intro-section {
+    background: #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+
+.row-two-intro-section-heading {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mainFont);
+}
+
+.common-head-style {
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #4b4a4a;
+    line-height: 3;
+}
+
+.big-head {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: #2b2b2b;
+    line-height: 2;
+}
+
+.intro-para {
+    width: 60%;
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.row-two-intro-section-services {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.row-two-intro-section-services-card {
+    width: 100%;
+    background: url(../../images/content/introduction-section/first-card-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.row-two-intro-section-services-card-overlay {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #010a38a1;
+    font-family: var(--mainFont);
+    color: #ffffff;
+}
+
+.row-two-intro-section-services-card-overlay:hover {
+    background: #1f2024c5;
+}
+
+.row-two-intro-section-services-card-overlay .card-icon a i {
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 2;
+}
+
+.card-service-name h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 5;
+}
+
+.card-service-para {
+    width: 65%
+}
+
+.card-service-para p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.card-service-read-more {
+    margin: 20px 0;
+}
+
+.card-service-read-more a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* ---------------cards----------------- */
+
+@media (max-width: 961px) {
+    .big-head {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-para {
+        width: 80%;
+    }
+    .big-head h2 {
+        font-size: 15px;
+        line-height: 3;
+    }
+}

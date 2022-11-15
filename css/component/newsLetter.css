@@ -1,0 +1,365 @@
+/* newsLetter section  */
+
+.university-newsletter {
+    height: 100%;
+    background-image: url('../../images/content/news-letter-section/newsletter-background.jpg');
+    background-position: bottom right;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.university-newsletter-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.university-newsletter-container-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.university-newsletter-container-left-card {
+    width: 48%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0 0 20px 0 #ebebeb;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.university-newsletter-container-left-card:hover {
+    box-shadow: 0 0 0 0 #ebebeb;
+}
+
+.university-newsletter-container-left-card-image-overlay {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.university-newsletter-container-left-card-image-overlay .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.university-newsletter-container-left-card-image-overlay .image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+}
+
+.university-newsletter-container-left-card-image-overlay:hover.university-newsletter-container-left-card-image-overlay .image img {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(var(--secondColor), 0.5); */
+    background-color: #fe70418e;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay div:first-child {
+    justify-content: start;
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay div:nth-child(2) {
+    justify-content: end;
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay div a i {
+    color: #353535;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.university-newsletter-container-left-card-image-overlay .overlay div a i:hover {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+}
+
+.university-newsletter-container-left-card-image-overlay:hover.university-newsletter-container-left-card-image-overlay .overlay {
+    display: flex;
+}
+
+.university-newsletter-container-left-card-content {
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-family: var(--mainFont);
+}
+
+.university-newsletter-container-left-card-content .content-date {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.university-newsletter-container-left-card-content .content-date span {
+    display: block;
+    font-size: 13px;
+    color: #8F8F8F;
+    line-height: 2;
+}
+
+.university-newsletter-container-left-card-content .content-date span:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.university-newsletter-container-left-card-content .content-heading h2 {
+    width: 80%;
+    color: #353535;
+    font-size: 20px;
+    line-height: 1.5;
+    ;
+}
+
+.university-newsletter-container-left-card-content .content-para p {
+    margin-top: 5px;
+    width: 80%;
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.university-newsletter-container-left-card-content .content-cart-icon {
+    width: 85%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.university-newsletter-container-left-card-content .content-cart-icon a i {
+    /*margin: 5px 0;
+    */
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #8f8f8f;
+    background: #f6f6f6;
+    /*line-height: 1.5;
+    */
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.university-newsletter-container-left-card-content .content-cart-icon a i:hover {
+    color: #ffffff;
+    background: var(--secondColor);
+}
+
+.university-newsletter-container-left-card-content .content-cart-icon::after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background: #f0eeee;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.university-newsletter-container-left-card-content .content-moral {
+    color: #8F8F8F;
+    text-transform: uppercase;
+}
+
+.university-newsletter-container-right {
+    padding: 0 50px;
+}
+
+.newsletter-hidding {
+    font-family: var(--mainFont);
+    position: relative;
+}
+
+.newsletter-hidding::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background: #353535;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 50em;
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    -ms-border-radius: 50em;
+    -o-border-radius: 50em;
+}
+
+.newsletter-hidding h3:nth-child(1) {
+    line-height: 0;
+}
+
+.newsletter-hidding h3:nth-child(2) {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.university-newsletter-right-form {
+    margin-top: 50px;
+}
+
+.university-newsletter-right-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.university-newsletter-right-form form input {
+    border-style: none;
+    outline: none;
+    border-radius: 50em;
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    -ms-border-radius: 50em;
+    -o-border-radius: 50em;
+}
+
+.university-newsletter-right-form form input:nth-child(1) {
+    padding: 20px 50px;
+    color: #8F8F8F;
+    caret-color: var(--secondColor);
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.university-newsletter-right-form form input:nth-child(2) {
+    width: 120px;
+    padding: 20px;
+    margin-top: 30px;
+    background: var(--secondColor);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.university-newsletter-right-form form input:nth-child(2):hover {
+    background: #353535;
+}
+
+@media (max-width: 1281px) {
+    .university-newsletter-container {
+        grid-template-columns: 70% 30%;
+    }
+    .university-newsletter-container-right {
+        padding: 0 20px;
+    }
+    .university-newsletter-container-left-card-content .content-date {
+        width: 70%;
+    }
+    .university-newsletter-container-left-card-content .content-para p {
+        width: 85%;
+    }
+}
+
+@media (max-width: 961px) {
+    .university-newsletter-container {
+        grid-template-columns: 100%;
+    }
+    .university-newsletter-container-left-card-content .content-date {
+        width: 90%;
+    }
+    .university-newsletter-container-left-card-content .content-para p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .university-newsletter-container-left {
+        flex-direction: column;
+    }
+    .university-newsletter-container-left-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .university-newsletter-container-left-card-content .content-date {
+        width: 50%;
+    }
+    .university-newsletter-container-left-card-content .content-heading h2 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .university-newsletter-container-left-card-content .content-date {
+        width: 75%;
+        margin-bottom: 5px;
+    }
+    .university-newsletter-container-left-card-content .content-date span {
+        line-height: 1.4;
+        font-size: 11px;
+    }
+}
